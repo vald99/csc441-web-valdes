@@ -1,0 +1,2 @@
+## Week 8, Friday
+On a phone, there was a little too much space between the text inside of the footer and the bottom of the screen, so I changed padding-bottom within the footer (which did nothing) so I then changed the bottom padding within the body itself (where the footer lives) so that I could adjust the bottom of the body box that way. I'm sure there's a more elegant way to center the items vertically within the footer, but I'm not sure just yet.
