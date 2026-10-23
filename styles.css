@@ -58,6 +58,11 @@ footer {
     align-items: center;
 }
 
+/* Lab 13: Task 5: one thing of your own */
+footer a:focus-visible {
+    outline: 2px solid var(--accent);
+}
+
 /* Lab 11: Task 4: links */
 a {
     color: var(--accent);
@@ -91,13 +96,26 @@ li {
 }
 
 /* Class 13: Step 3: the nav bar */
+/* Lab 13: Task 4: separate the bar from the header */
 nav {
     text-decoration: none;
     font-weight: 700;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid transparent;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2rem;
 }
 
 nav a:hover {
     border-bottom-color: var(--accent);
+}
+
+/* Lab 13: Task 1: which page am I on */
+nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Lab 13: Task 5: one thing of your own */
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
 }
