@@ -31,6 +31,7 @@ header {
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 header p { color: var(--text-muted); font-size: 1rem; margin-top: 0; }
@@ -50,12 +51,14 @@ p {
 }
 
 /* Lab 12: Task 3: footer */
+/* Lab 14: Task 4: footer stacks on narrow screens */
 footer { 
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /* Lab 13: Task 5: one thing of your own */
@@ -97,7 +100,8 @@ li {
 
 /* Class 13: Step 3: the nav bar */
 /* Lab 13: Task 4: separate the bar from the header */
-nav {
+/* Lab 14: Task 1: the nav stacks on narrow screens */
+nav ul {
     text-decoration: none;
     font-weight: 700;
     padding-bottom: .5rem;
@@ -105,6 +109,9 @@ nav {
     margin-bottom: 2rem;
     list-style: none;
     padding-left: 0, gap;
+    flex-direction: column;
+    display: flex; /* wasn't already in the code, it was in S13 but we didn't add this in class */
+    gap: 0.5rem; /* wasn't already in the code, it was in S13 but we didn't add this in class */
 }
 
 nav a:hover {
@@ -121,3 +128,39 @@ nav a.current {
 nav a:focus-visible {
     outline: 2px solid var(--accent);
 }
+
+/* Class 14: Step 2: the cards go in a row */
+/* Class 14: Step 3: stack by default */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card {
+    /* Lab 14: Task 6: center the card row */
+    flex: 0 1 18rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Class 14: Step 3: a row when there's room */
+@media (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    /* Lab 14: Task 4: footer stacks on narrow screens */
+    /* Lab 14: Task 6: center the card row */
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
