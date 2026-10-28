@@ -164,3 +164,10 @@ nav a:focus-visible {
     }
 }
 
+body.dark {
+    --text: white;
+    --text-muted: silver;
+    --accent: skyblue;
+    --background: black;
+    --border: dimgray;
+}
