@@ -11,6 +11,7 @@
     --accent: #005d64;
     --background: #efefef;
     --border: #147076;
+    --error: crimson;
 }
 
 body {
@@ -175,6 +176,7 @@ body.dark {
     --accent: skyblue;
     --background: black;
     --border: dimgray;
+    --error: lightsalmon;
 }
 
 /* Class 16: Step 3: the form */
@@ -213,4 +215,9 @@ form button {
 #form-status {
     font-weight: 500;
     color: var(--accent);
+}
+
+/* Lab 16: Task 1: the error state */
+#form-status.error {
+    color: var(--error);
 }

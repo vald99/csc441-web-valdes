@@ -62,12 +62,35 @@ const contactForm = document.querySelector("#contact-form");
 if (contactForm) {
     const formStatus = document.querySelector("#form-status");
 
-    contactForm.addEventListener("submit", function(event) {
-        event.preventDefault()
-    
-        const name = document.querySelector("#name").value;
+    // Lab 16: Task 1: my own check before accepting it
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
+        const name = document.querySelector("#name").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        if (name.length < 2) { 
+            formStatus.textContent = "Please add to name field. Names must be at least 2 characters."
+            formStatus.classList.add("error");
+            return;
+        }
+
+        if (message.length < 10) {
+            formStatus.textContent = "Please write a bit more, at least 10 characters.";
+            formStatus.classList.add("error");
+            return;
+        }
+
+        formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + ". Your message is ready to send.";
         contactForm.reset();
+    });
+
+    // Lab 16: Task 2: clear the error once they start fixing it
+    contactForm.addEventListener("input", function () {
+        if (formStatus.classList.contains("error")) {
+            formStatus.textContent = "";
+            formStatus.classList.remove("error");
+        }
     });
 }
