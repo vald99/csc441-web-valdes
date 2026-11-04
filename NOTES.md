@@ -34,3 +34,6 @@ Finding things to fix:
 3. What rule did you write for your form, and why that rule? *I added a rule to check for the name field and make sure that it's at least 2 characters. It seemed reasonable to have, and it was also quite easy to implement given when I got around to doing this lab.*
 4. The two things you found and fixed at phone width. *See the section above labelled "Week 10, Friday" which this is itslf a part of.*
 5. Your form does not actually send anything anywhere yet. What do you think is missing? *I think the form is missing some sort of way to parse the information into a format to be sent in, since right now it just clears the boxes and doesn't save the data, and then AFTERWARDS it would need some code to send that parsed data somewhere useful.*
+
+## Week 11, Wednesday
+Live site: https://yandelvaldes.netlify.app/
