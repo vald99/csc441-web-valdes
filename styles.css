@@ -9,7 +9,8 @@
     --text: #1b1b1b;
     --text-muted: #5b5d60;
     --accent: #005d64;
-    --background: #efefef;
+    /* Lab 17: Task 3: something I can see */
+    --background: #bafaff;
     --border: #147076;
     --error: crimson;
 }
@@ -174,7 +175,8 @@ body.dark {
     --text: white;
     --text-muted: silver;
     --accent: skyblue;
-    --background: black;
+    /* Lab 17: Task 3: something I can see */
+    --background: #002123;
     --border: dimgray;
     --error: lightsalmon;
 }
