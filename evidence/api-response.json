@@ -1,26 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Photography",
-    "description": "I like taking photos outdoors",
-    "category": "Creative",
+    "title": "Framework Laptop",
+    "description": "A modular laptop designed to be repairable and upgradeable.",
+    "category": "Hardware",
     "image_url": null,
     "created_at": "2026-11-11T22:45:51.657211+00:00"
   },
   {
     "id": 2,
-    "title": "Reading",
-    "description": "I enjoy science fiction and mysteries.",
-    "category": "Learning",
+    "title": "Linux kernel",
+    "description": "A monolithic kernel designed to be openly available and adaptable to any hardware.",
+    "category": "Software",
     "image_url": null,
     "created_at": "2026-11-11T22:45:51.657211+00:00"
   },
   {
     "id": 3,
-    "title": "Hiking",
-    "description": "I explore local trails on weekends.",
-    "category": "Outdoors",
+    "title": "USB-C",
+    "description": "A form of USB designed to be modern and flexible, featuring improvements to other iterations such as reversible ports, power delivery, and substantially improved bandwidth.",
+    "category": "Hardware",
     "image_url": null,
     "created_at": "2026-11-11T22:45:51.657211+00:00"
+  },
+  {
+    "id": 4,
+    "title": "git",
+    "description": "A software version control system originally created to support development of the Linux kernel, then expanded and improved to be the industry standard.",
+    "category": "Software",
+    "image_url": null,
+    "created_at": "2026-11-15T00:04:34.192638+00:00"
+  },
+  {
+    "id": 5,
+    "title": "Ryzen 5 5600x",
+    "description": "A six-core, twelve-thread processor developed by AMD using the x86_64 architecture and AM4 socket type.",
+    "category": "Hardware",
+    "image_url": null,
+    "created_at": "2026-11-15T01:06:43.477074+00:00"
   }
 ]
